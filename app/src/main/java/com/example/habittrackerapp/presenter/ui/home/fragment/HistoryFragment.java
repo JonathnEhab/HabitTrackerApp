@@ -162,6 +162,7 @@ public class HistoryFragment extends Fragment {
         });
     }
     private void insertUniqueHabits(List<HistoryHabit> historyHabits, List<Habit> existingHabits) {
+
         Set<String> existingHabitNames = new HashSet<>();
         if (existingHabits != null) {
             for (Habit habit : existingHabits) {
@@ -185,7 +186,7 @@ public class HistoryFragment extends Fragment {
             }
         }
         vibrate(requireActivity(),100);
-        showToast(requireActivity(),"عداتك اضفتلك من اول و جديد");
+
     }
 
     @Override
