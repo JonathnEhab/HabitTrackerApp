@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.HabitTracker.Dark" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#FFB200</item>
+        <item name="colorPrimaryVariant">#EB5B00</item>
+        <item name="colorSecondary">#3B1C32</item>
+        <item name="android:windowBackground">#121212</item>
+        <item name="colorOnBackground">#FFFFFF</item>
+        <item name="colorSurface">#1E1E1E</item>
+        <item name="colorOnSurface">#E0E0E0</item>
+    </style>
+</resources>

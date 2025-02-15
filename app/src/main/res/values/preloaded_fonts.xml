@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/akaya_telivigala</item>
+        <item>@font/amiri</item>
+        <item>@font/cairo</item>
+        <item>@font/changa</item>
+        <item>@font/lateef</item>
+        <item>@font/lemonada</item>
+        <item>@font/marhey</item>
+        <item>@font/rakkas</item>
+    </array>
+</resources>

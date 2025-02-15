@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:label="fragment_home"
+        android:name="com.example.habittrackerapp.presenter.ui.home.fragment.HomeFragment"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_newHabitFragment"
+            app:destination="@id/newHabitFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_updateHabitFragment"
+            app:destination="@id/updateHabitFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_historyFragment"
+            app:destination="@id/historyFragment" />
+    </fragment>
+    <fragment android:id="@+id/newHabitFragment"
+        android:name="com.example.habittrackerapp.presenter.ui.home.fragment.NewHabitFragment"
+        android:label="fragment_new_habit"
+        tools:layout="@layout/fragment_new_habit">
+        <action
+            android:id="@+id/action_newHabitFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/updateHabitFragment"
+        android:name="com.example.habittrackerapp.presenter.ui.home.fragment.UpdateHabitFragment"
+        android:label="fragment_update_habit"
+        tools:layout="@layout/fragment_update_habit" >
+
+        <argument
+            android:name="habitId"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_updateHabitFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.example.habittrackerapp.presenter.ui.home.fragment.HistoryFragment"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history" />
+
+</navigation>
