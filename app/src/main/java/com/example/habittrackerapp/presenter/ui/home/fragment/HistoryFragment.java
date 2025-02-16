@@ -160,9 +160,10 @@ public class HistoryFragment extends Fragment {
                 });
             }
         });
+        showToast(requireActivity(),"عاداتك اضفتلك من اول وجديد");
+        vibrate(requireActivity(),100);
     }
     private void insertUniqueHabits(List<HistoryHabit> historyHabits, List<Habit> existingHabits) {
-
         Set<String> existingHabitNames = new HashSet<>();
         if (existingHabits != null) {
             for (Habit habit : existingHabits) {
@@ -185,7 +186,7 @@ public class HistoryFragment extends Fragment {
                 habitHomeViewModel.insert(newHabit);
             }
         }
-        vibrate(requireActivity(),100);
+
 
     }
 
